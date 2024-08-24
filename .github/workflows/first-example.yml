@@ -16,4 +16,4 @@ jobs:
             more README.md
 
         - name: Generate ASCII Art
-          run: coasay -f dragon "BRRRRR" >> dragon.txt
+          run: cowsay -f dragon "BRRRRR" >> dragon.txt
