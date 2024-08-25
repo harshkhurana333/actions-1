@@ -11,7 +11,7 @@ jobs:
 
         - name: Executing Shell Script
           run: |
-            pushd .github/workflow/
+            pushd /.github/workflow
             chmod +x ascii-script.sh
             ./ascii-script.sh
             popd
