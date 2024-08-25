@@ -16,7 +16,7 @@ jobs:
           run: cowsay -f dragon "RAWRRRRRR" >> dragon.txt
 
         - name: upload artifact action
-          uses: actions/upload-artifact@v3
+          uses: actions/upload-artifact@v4
           with:
             name: upload dragon text file
             path: dragon.txt
@@ -26,7 +26,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: download artifact action
-          uses: actions/download-artifact@v3
+          uses: actions/download-artifact@v4
           with:
             name: upload dragon text file
         
@@ -38,7 +38,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: download artifact action
-          uses: actions/download-artifact@v3
+          uses: actions/download-artifact@v4
           with:
             name: upload dragon text file
           
